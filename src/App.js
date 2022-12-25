@@ -1,7 +1,8 @@
+// Imported from packages
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Components 
+// Components
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Services from "./components/Services";
@@ -16,6 +17,7 @@ import "../src/styles/contact.scss";
 import "../src/styles/footer.scss";
 import "../src/styles/mediaquery.scss";
 
+// Main App Component
 const App = () => {
   return (
     <>
