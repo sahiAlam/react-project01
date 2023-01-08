@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import NotFoundPage from "./components/NotFoundPage";
 
 // CSS files Imported
 import "../src/styles/App.scss";
@@ -16,6 +17,7 @@ import "../src/styles/home.scss";
 import "../src/styles/contact.scss";
 import "../src/styles/footer.scss";
 import "../src/styles/mediaquery.scss";
+import "../src/styles/notFoundPage.scss";
 
 // Main App Component
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
       </Router>
